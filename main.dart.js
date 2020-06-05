@@ -9,7 +9,7 @@ if(typeof version=="function"&&version.length==0){var r=version()
 if(/^\d+\.\d+\.\d+\.\d+$/.test(r))return true}}catch(q){}return false}()
 function setFunctionNamesIfNecessary(a){function t(){};if(typeof t.name=="string")return
 for(var t=0;t<a.length;t++){var s=a[t]
-var r=Object.keys(s)
+var r=Object.keys(s) 
 for(var q=0;q<r.length;q++){var p=r[q]
 var o=s[p]
 if(typeof o=='function')o.name=p}}}function inherit(a,b){a.prototype.constructor=a
